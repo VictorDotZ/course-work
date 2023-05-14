@@ -3,6 +3,15 @@ data/
 *logs*/
 *.sqlite3
 
+# tex
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.*
+*.toc
+*.pdf
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
