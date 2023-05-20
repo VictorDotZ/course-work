@@ -122,11 +122,11 @@
 \contentsmargin[0.3em]{2em}
 
 \titlecontents{chapter}[0pt]{\addvspace{1pc}}%
-{\nopagebreak\vspace{.3em}\newline\large}{\large}{\titlerule*{ }\contentspage[{\makebox[1em][r]{\thecontentspage}%
-}]}[\vspace{0.3pc}]
+{\nopagebreak}{\large}{\titlerule*{ }\contentspage[{\makebox[1em][r]{\thecontentspage}%
+}]}[]
 
 %\dottedcontents{section}[1.5em]{}{2.3em}{1pc}
-\titlecontents{section}[2.8em\hspace{-1.3em}]{}{\thecontentslabel.\hspace{5em}}%
+\titlecontents{section}[2.8em\hspace{-1.3em}]{}{\thecontentslabel.\hspace{0.5em}}%
 {\hspace*{-2pc}}{\protect\nolinebreak\titlerule*[.5em]{.}\protect\nolinebreak\contentspage[{\makebox[1em][r]{\thecontentspage}%
 }]}[]
 
@@ -134,7 +134,7 @@
 {}{}{\protect\nolinebreak\titlerule*[.5em]{.}\protect\nolinebreak\contentspage[{\makebox[1em][r]{\thecontentspage}%
 }]}[]
 
-\titlecontents{subsubsection}[8em\hspace{-2em}]{\thecontentslabel.\hspace{5em}}%
+\titlecontents{subsubsection}[8em\hspace{-2em}]{\thecontentslabel.\hspace{0.5em}}%
 {}{}{\protect\nolinebreak\titlerule*[.5em]{.}\protect\nolinebreak\contentspage[{\makebox[1em][r]{\thecontentspage}%
 }]}[]
 
