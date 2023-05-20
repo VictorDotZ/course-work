@@ -31,6 +31,7 @@
 %\RequirePackage{etoolbox} %Musorin-edited Для нумерации уравнений и выравнивания внтури одного \begin{equation}
 \RequirePackage[left]{lineno} %Musorin-edited Для построчной нумерации, чтобы легче было правки вносить
 %\RequirePackage{slashbox}
+\RequirePackage{fancyhdr}
 
 \renewcommand{\thesubfigure}{\asbuk{subfigure}}
 
@@ -42,6 +43,7 @@
 \definecolor{golub}{RGB}{31,126,180}
 \definecolor{fiolet}{RGB}{128,0,128}
 \definecolor{biruz}{RGB}{0,255,255}
+\definecolor{black}{RGB}{0,0,0}
 
 
 %\renewcommand\eqref[1]{\textup{\usebeamercolor[fg]{structure}\tagform@{\ref{#1}}}}
@@ -120,8 +122,7 @@
 \contentsmargin[0.3em]{2em}
 
 \titlecontents{chapter}[0pt]{\addvspace{1pc}}%
-{\bfseries\makebox[3cm][l]{\large Глава \thecontentslabel\enspace}%
-\nopagebreak\vspace{.3em}\newline\large}{\large}{\titlerule*{ }\contentspage[{\makebox[1em][r]{\bf\thecontentspage}%
+{\nopagebreak\vspace{.3em}\newline\large}{\large}{\titlerule*{ }\contentspage[{\makebox[1em][r]{\thecontentspage}%
 }]}[\vspace{0.3pc}]
 
 %\dottedcontents{section}[1.5em]{}{2.3em}{1pc}
@@ -140,7 +141,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Оформляем заголовок главы
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\renewcommand \thechapter {\@Roman\c@chapter}%% Нумерация глав римскими цифрами
+\addto\captionsrussian{\renewcommand{\chaptername}{}}
+% \renewcommand \thechapter {\@Roman\c@chapter}%% Нумерация глав римскими цифрами
+\renewcommand \thechapter{}%% Без нумерации глав
 \newcommand{\nonumchapter}{\@nonumchap}
 \renewcommand{\appendix}{\@tataappendix}
 \def\@nonumchap#1{\setcounter{section}{0}%
