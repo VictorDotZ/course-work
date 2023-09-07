@@ -2,6 +2,7 @@
 data/
 *logs*/
 *.sqlite3
+*.lnk
 
 # tex
 *.aux
@@ -11,6 +12,8 @@ data/
 *.synctex.*
 *.toc
 *.pdf
+*.pdf_tex
+tex/svg-inkscape/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
